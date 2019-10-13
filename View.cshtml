@@ -1,0 +1,6 @@
+﻿@model List<SelectListsViewModel>
+
+@foreach(var Value in Model)
+{
+    @await Html.PartialAsync("_ListView", Value)
+}
